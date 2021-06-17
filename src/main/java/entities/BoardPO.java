@@ -6,20 +6,22 @@ public class BoardPO {
 
   private int size;
   private List<SnakePO> snakes;
-  private int position;
+//  private int position;     //map it with player
+//  private Map<Integer, Integer> playerPosition;
+
 
   public BoardPO(int size) {
     this.size = size;
     this.snakes = new ArrayList<>();
   }
 
-  public int getPosition() {
-    return position;
-  }
-
-  public void setPosition(int position) {
-    this.position = position;
-  }
+//  public int getPosition(Integer playerId) {
+//    return playerPosition.get(playerId);
+//  }
+//
+//  public void setPosition(int position) {
+//    this.position = position;
+//  }
 
   public int getSize() {
     return size;
