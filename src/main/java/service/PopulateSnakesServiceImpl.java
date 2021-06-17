@@ -21,10 +21,10 @@ public class PopulateSnakesServiceImpl implements PopulateSnakesService {
       snakes.add(new SnakePO(start, end));
     }
 
-//    System.out.println("Snakes at position:\n");
-//    for(SnakePO snakePO:snakes){
-//      System.out.println(snakePO.getStart()+"  "+ snakePO.getEnd()+"\n");
-//    }
+    System.out.println("Snakes at position:\n");
+    for(SnakePO snakePO:snakes){
+      System.out.println(snakePO.getStart()+"  "+ snakePO.getEnd()+"\n");
+    }
     return snakes;
   }
 }

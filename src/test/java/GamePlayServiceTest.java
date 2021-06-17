@@ -20,11 +20,11 @@ public class GamePlayServiceTest {
     Assert.assertEquals((int) GameConstants.DEFAULT_BOARD_SIZE, snakeAndLadderBoard.getSize());
   }
 
-  @Test
-  public void boardInitialPositionTest(){
-    BoardPO snakeAndLadderBoard = gamePlayService.initBoard(GameConstants.DEFAULT_BOARD_SIZE);
-    Assert.assertEquals((int) GameConstants.INITIAL_PLAYER_POSITION, snakeAndLadderBoard.getPosition());
-  }
+//  @Test
+//  public void boardInitialPositionTest(){
+//    BoardPO snakeAndLadderBoard = gamePlayService.initBoard(GameConstants.DEFAULT_BOARD_SIZE);
+//    Assert.assertEquals((int) GameConstants.INITIAL_PLAYER_POSITION, snakeAndLadderBoard.getPosition());
+//  }
 
   @Test(expectedExceptions = DiceException.class,
     expectedExceptionsMessageRegExp = "--> ErrorCode: 1- Invalid dice Selection")
@@ -51,11 +51,11 @@ public class GamePlayServiceTest {
     Assert.assertEquals((Integer) snakeAndLadderBoard.getSnakes().size(), GameConstants.NUMBER_OF_SNAKES);
   }
 
-  @Test
-  public void startGameTest(){
-    BoardPO snakeAndLadderBoard = gamePlayService.initBoard(GameConstants.DEFAULT_BOARD_SIZE);
-    DiceService dice = gamePlayService.setDice(FAIR_DICE_SELECTION_VALUE);
-    gamePlayService.startGame(snakeAndLadderBoard, dice);
-  }
+//  @Test
+//  public void startGameTest(){
+//    BoardPO snakeAndLadderBoard = gamePlayService.initBoard(GameConstants.DEFAULT_BOARD_SIZE);
+//    DiceService dice = gamePlayService.setDice(FAIR_DICE_SELECTION_VALUE);
+//    gamePlayService.startGame(snakeAndLadderBoard, dice);
+//  }
 
 }
