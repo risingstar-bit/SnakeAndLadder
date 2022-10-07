@@ -3,7 +3,7 @@ package main.java.common;
 public interface GameConstants {
 
   Integer NUMBER_OF_SNAKES = 12;
-  Integer DEFAULT_BOARD_SIZE = 100;
+  Integer DEFAULT_BOARD_SIZE = 150;
   Integer INITIAL_PLAYER_POSITION = 0;
   Integer GAME_RUN_COUNT = 100;
 
